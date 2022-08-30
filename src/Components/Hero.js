@@ -24,7 +24,7 @@ function Hero() {
             // console.log(entry);
         },Option);
         observer.observe(Ref.current);
-     },[])
+     },[Option])
 
   
     return (
