@@ -23,7 +23,7 @@ function CardsAndInfo() {
 
         observer.observe(Ref?.current);
 
-    }, [Ref?.current, Option]);
+    }, [Option]);
     return (
         <div className="cards__infoContainer" ref={Ref}>
             <div className={`cardOneSplitContainer ${sectionVisible ? " SectionVisibleStyle" : "SectionNotVisibleStyle"}`}>
