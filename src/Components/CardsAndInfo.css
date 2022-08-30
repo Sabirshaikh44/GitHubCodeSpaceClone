@@ -1,0 +1,360 @@
+:root {
+  --grayColor: gray;
+  --defBrRadius: 7px;
+  --defBoxShadow: #0d1117 0px 1px 4px;
+  --defCardContainerPadding: 0rem 8rem;
+}
+.cards__infoContainer {
+  height: auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+.SectionVisibleStyle {
+  opacity: 1;
+}
+.SectionNotVisibleStyle {
+  opacity: 0.4;
+}
+.cardOneLeftSectionSupportsLogoImgNotVisible {
+  opacity: 0.4;
+  margin-left: -2rem;
+}
+.cardOneLeftSectionSupportsLogoImgVisible {
+  opacity: 1;
+  margin-left: 0rem;
+}
+.SectionOneImgOnImgVisibleStyle {
+  opacity: 1;
+  margin-right: 0rem;
+}
+
+.SectionImgOnImgNotVisibleStyle {
+  opacity: 0;
+  margin-right: -4rem;
+}
+.cardOneSplitContainer,
+.cardTwoSplitContainer {
+  margin-top: 5rem;
+  padding: 0rem 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s all;
+}
+.cardOneSplitContainer > *,
+.cardTwoSplitContainer > * {
+  flex-basis: 50%;
+}
+
+.cardOneLeftSectionHeading,
+.cardTwoLeftSectionHeading {
+  font-size: 3.25rem;
+  text-align: left;
+}
+.cardOneLeftSectionDescPara,
+.cardTwoLeftSectionDescPara {
+  color: var(--grayColor);
+  font-size: 1.25rem;
+  margin-top: 0.6rem;
+  text-align: left;
+}
+.cardOneLeftSectionSupportsLogoImg {
+  display: flex;
+  justify-content: flex-start;
+  transition: 0.3s all;
+}
+.cardOneLeftSectionSupportsLogoImg img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  margin-top: 1.25rem;
+}
+.cardOneRightSection {
+  position: relative;
+}
+.cardOneSplitContainer .cardOneRightSection img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  box-shadow: var(--defBoxShadow);
+  border-radius: var(--defBrRadius);
+  margin-left: 3rem;
+}
+.cardOneRightSection .cardOneRightSectionImgOnImg {
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  width: 90%;
+  transition: 0.3s all;
+}
+.cardOneRightSectionImgOnImg img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  box-shadow: var(--defBoxShadow);
+  border-radius: var(--defBrRadius);
+}
+.cardTwoSplitContainer {
+  margin-top: -3.33rem;
+  transition: 0.5s all;
+}
+.SectionTwoVisibleStyle {
+  opacity: 1;
+  margin-top: 3.33rem;
+}
+.SectionTwoNotVisibleStyle {
+  opacity: 0;
+}
+.cardTwoLeftSection {
+  padding-right: 2rem;
+  transition: 0.5s all;
+}
+.cardTwoRightSection img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-left: 2rem;
+}
+.cardTwoLeftSectionSupportSpecDesc {
+  margin-top: 1.55rem;
+  display: flex;
+  justify-content: space-between;
+}
+.SpecsAndHeadings {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+.SpecsAndHeadings .specsGrayHeader {
+  color: var(--grayColor);
+  font-size: 1.03rem;
+  margin-bottom: 0rem;
+}
+.SpecsDesc {
+  font-size: 2rem;
+  font-weight: bolder;
+  background: linear-gradient(90.91deg, #79c0ff -24.67%, #d2a8ff 53.55%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cardThirdSplitContainer {
+  display: flex;
+  padding: 0rem 8rem;
+  margin-top: 6.77rem;
+  justify-content: center;
+  align-items: flex-start;
+  transition: 0.7s all;
+}
+
+.cardThirdSplitContainer > * {
+  flex-basis: 50%;
+}
+.cardThirdSplitContainer .cardThirdLeftSection {
+  padding-right: 4rem;
+  text-align: left;
+  margin-right: 1rem;
+}
+.cardThirdLeftSectionBoldText {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.cardThirdLeftSectionGrayPara {
+  color: var(--grayColor);
+  font-size: 1.2rem;
+}
+.cardThirdRightSection {
+  position: relative;
+}
+.cardThirdRightSection img {
+  width: 100%;
+  margin-left: 2rem;
+  border-radius: var(--defBrRadius);
+  box-shadow: var(--defBoxShadow);
+  object-fit: contain;
+}
+.cardThirdRightSectionImgOnImgContainer {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  right: -10%;
+  margin-left: 2rem;
+  transition: 0.5s all;
+}
+.cardThirdRightSectionImgOnImgContainer img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 2rem;
+  box-shadow: var(--defBoxShadow);
+  border-radius: var(--defBrRadius);
+  border-style: dashed;
+  border-width: 2px;
+  border-color: var(--grayColor);
+}
+.SlideInImage {
+  opacity: 1;
+}
+.SlideOutImage {
+  opacity: 0;
+}
+.cardFourthSplitContainer {
+  margin-top: 6.77rem;
+  padding: var(--defCardContainerPadding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9rem;
+}
+.cardFourthSplitContainer > * {
+  flex-basis: 50%;
+}
+.cardFourthRightSection {
+  padding-right: 4rem;
+  text-align: left;
+}
+.cardFourthRightSectionBoldHeader {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 50px;
+}
+.cardFourthRightSectionGrayPara {
+  font-size: 1.2rem;
+  color: var(--grayColor);
+  margin-top: 1.6rem;
+}
+.cardFourthLeftSection {
+  position: relative;
+}
+.cardFourthLeftSection img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--defBrRadius);
+  box-shadow: var(--defBoxShadow);
+}
+.cardFourthLeftSectionImgOnImg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardFourthLeftSectionImgOnImg img:first-child {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  bottom: -10%;
+  left: -10%;
+}
+.cardFourthLeftSectionImgOnImg img:nth-child(2) {
+  position: absolute;
+  width: 40%;
+  height: auto;
+  object-fit: contain;
+  bottom: 15%;
+  left: 30%;
+}
+@media screen and (max-width: 768px){
+    .cardOneSplitContainer,.cardTwoSplitContainer,.cardThirdSplitContainer,.cardFourthSplitContainer{
+        flex-direction: column-reverse;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    .cardOneSplitContainer > *, .cardTwoSplitContainer > * {
+        flex :1;
+    }
+    .cardOneLeftSectionHeading, .cardTwoLeftSectionHeading {
+        font-size: 2.25rem;
+    }
+    .cardOneSplitContainer .cardOneRightSection img {
+        margin-left: 0rem;
+        margin-bottom: 2rem;
+    }
+    .cardOneRightSection .cardOneRightSectionImgOnImg {
+        right: -7%;
+    }
+    .cardOneLeftSection{
+        margin-top: 2rem;
+    }
+    .SectionTwoVisibleStyle {
+
+        margin-top: 1.33rem;
+    }
+    .cardTwoRightSection img {
+        margin-left: 0rem;
+    }
+    .cardTwoLeftSectionSupportSpecDesc {
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+    .cardTwoLeftSection{
+        padding-right: 0rem;
+    }
+    .SpecsDesc {
+        margin-bottom: 0.6rem;
+    }
+    .cardThirdSplitContainer {
+        margin-top: 2rem;
+    }
+    .cardThirdSplitContainer > * {
+        flex: 1;
+    }
+    .cardThirdRightSection {
+        margin-bottom: 6rem;
+    }
+    .cardThirdLeftSectionBoldText { 
+        font-size: 2.25rem;
+    }
+    .cardThirdRightSection img {
+        margin-left: 0rem;
+    }
+    .cardThirdRightSectionImgOnImgContainer {
+        margin-left: 0rem;
+       
+    }
+    .cardThirdRightSectionImgOnImgContainer img {
+        margin-bottom: 1rem;
+    }
+    .cardThirdSplitContainer .cardThirdLeftSection {
+        padding-right: 0rem;
+    }
+    .cardFourthSplitContainer{
+        margin-bottom: 2rem;
+    }
+    .cardFourthRightSection {
+        padding-right: 0rem;
+        margin-top: 2rem;
+    }
+    .cardFourthRightSectionBoldHeader{
+        font-size: 2.1rem;
+        margin-top: 1rem;
+    }
+    .cardFourthLeftSectionImgOnImg img:first-child{
+        left: -6%;
+    }
+    .testimonialHeader {
+        font-size: 2.25rem !important;
+    }
+    .testimonial {
+        margin-top: 2rem !important;
+        height: unset !important;
+        padding: 1rem !important;
+    }
+    .testimonail__TestimonialContainer{
+        flex-wrap: wrap;
+    }
+    .testimonail__TestimonialContainer > *{
+        flex: 1;
+        margin-bottom: 1rem;
+    }
+    .Testimonailbox1{
+        margin-bottom: 1rem;
+        margin-right: 0rem !important;
+    }
+    .testimonial__desc{
+        font-size: 1.2rem !important;
+        margin-bottom: 1rem !important;
+    }
+}

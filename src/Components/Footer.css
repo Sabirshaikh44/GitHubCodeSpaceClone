@@ -1,0 +1,105 @@
+.footerContainer{
+    padding: 0rem 8rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.footerSplitContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.footerSplitContainer > div:nth-child(1){
+ flex-basis: 40%;
+ text-align: left;
+}
+.footerSplitContainer > div:nth-child(2){
+    flex-basis: 60%;
+    text-align: center;
+   }
+.logoSectionFooter svg {
+    fill: white;
+}
+.linksFooterSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.linksContainer > *{
+    color: gray;
+    font-weight: 500;
+    margin-bottom: 1.4rem;
+    cursor: pointer;
+    transition: .3s all;
+    text-align: left;
+}
+.linksContainer > *:hover{
+    color: #58a6ff;
+}
+.footerCreatorContainer{
+    text-align: center;
+    padding: 2rem 4rem;
+    background:#161b22;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.creatorName{
+    flex: 0.4;
+}
+.CreatorNameHighlighter{
+    background: linear-gradient(90.91deg, #79c0ff -24.67%, #d2a8ff 53.55%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-left: 0.66rem;
+}
+.SocialIcons > *{
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .3s all;
+}
+.SocialIcons > *:hover{
+    color: #58a6ff;
+}
+@media screen and (max-width: 768px){
+    .footerContainer{
+        padding: 1rem;
+    }
+    .footerSplitContainer{
+        flex-wrap: wrap;
+    }
+    .footerSplitContainer > *{
+        margin-bottom: 2rem;
+    }
+    .footerSplitContainer > div:nth-child(2){
+        flex: 1;
+        margin-bottom: 0rem !important;
+    }
+    .linksContainer > *{
+        margin-bottom: 0.4rem;
+    }
+    .footerCreatorContainer{
+        padding: 2rem 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .creatorName{
+        flex: 100%;
+        margin-bottom: 1rem;
+    }
+    .SocialIcons{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .SocialIcons > i:first-child {
+        margin-left: 0rem !important;
+    }
+    .SocialIcons > i {
+        margin-left: 3rem !important;
+    }
+    
+}

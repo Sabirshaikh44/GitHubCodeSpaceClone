@@ -1,0 +1,90 @@
+:root {
+  --grayColor: gray;
+  --defBrRadius: 7px;
+  --defBoxShadow: #0d1117 0px 1px 4px;
+  --defCardContainerPadding: 0rem 8rem;
+}
+.testimonial {
+  height: 100vh;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: var(--defCardContainerPadding);
+}
+.testimonialHeader {
+  font-size: 3rem;
+  margin-bottom: 1.4rem;
+}
+.testimonail__TestimonialContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  text-align: left;
+}
+.testimonail__TestimonialContainer > * {
+  flex-basis: 50%;
+  height: fit-content;
+  width: fit-content;
+}
+.Testimonial {
+  border-radius: var(--defBrRadius);
+ 
+  cursor: pointer;
+  background: #161b22;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.Testimonailbox1 {
+  margin-right: 2rem;
+  
+}
+.testimonial__qouteIcon {
+  font-size: 3.5rem;
+  margin-bottom: 2rem !important;
+  background: linear-gradient(90.91deg, #79c0ff -24.67%, #d2a8ff 53.55%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Testimonial > * {
+  margin-bottom: 0.77rem;
+}
+.testimonial__desc {
+  font-size: 1.5rem;
+  padding: 0rem 0.3rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+}
+.testimonial__profileFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.testimonial__profileFooter img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+}
+.testimonialGiverName{
+    font-size: 1.1rem;
+    font-weight: 400;
+    background: linear-gradient(90.91deg, #79c0ff -24.67%, #d2a8ff 53.55%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.testimonailGiverProfile{
+    color: gray;
+    margin-top: 0.2rem;
+    font-size: 1rem;
+}
