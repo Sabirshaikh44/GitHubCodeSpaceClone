@@ -17,6 +17,12 @@
   font-size: 3rem;
   margin-bottom: 1.4rem;
 }
+.testimonialParaLine{
+  color: rgba(255, 255, 255, 0.8);
+}
+.testimonialParaLine i{
+  color: rgba(255, 255, 255, 0.8);
+}
 .testimonail__TestimonialContainer {
   display: flex;
   justify-content: center;

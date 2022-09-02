@@ -9,12 +9,12 @@ function Testimonial() {
             </h1>
             <h3 className="testimonialParaLine">
                 Learn how GitHub builds GitHub with Codespaces <span>
-                    <i class="fa-solid fa-angle-right"></i>
+                    <i className="fa-solid fa-angle-right"></i>
                 </span>
             </h3>
             <div className="testimonail__TestimonialContainer">
                 <div className="Testimonial Testimonailbox1">
-                    <i class="fa-solid fa-quote-left testimonial__qouteIcon"></i>
+                    <i className="fa-solid fa-quote-left testimonial__qouteIcon"></i>
                     <p className="testimonial__desc">
                         Unreal—Codespaces had me running a server in minutes, and that never happens as a new hire. What an awesome first week!
                     </p>
@@ -28,7 +28,7 @@ function Testimonial() {
                     </div>
                 </div>
                 <div className="Testimonial Testimonailbox2">
-                    <i class="fa-solid fa-quote-left testimonial__qouteIcon"></i>
+                    <i className="fa-solid fa-quote-left testimonial__qouteIcon"></i>
                     <p className="testimonial__desc">
                         Day 2 of Codespaces: Shipped a pull request and started working on another one without waiting for script/bootstrap.
                     </p>

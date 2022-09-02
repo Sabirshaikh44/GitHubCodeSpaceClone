@@ -340,7 +340,7 @@
 @media screen and (max-width: 768px) {
   .hero{
     margin-top: 3rem;
-    padding: 1rem;
+    padding: 0.4rem;
   }
   .hero .heroBoldBigText{
     font-size: 2.4rem;
@@ -354,9 +354,13 @@
   }
   .hero__getStartedBtn{
     margin-top: 1.66rem;
+    padding: 0.625rem 1rem;
+    font-size: 1rem;
   }
   .allPictureSection{
     flex-direction: column;
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 .allPictureSectionLeft,.allPictureSectionRight{
   display: none;
@@ -364,22 +368,40 @@
 .allPictureSectionMiddle{
   padding: 0rem;
 }
+.allPictureSectionMiddle__SecondBoxFirstSplitImgBox{
+  flex-wrap: wrap;
+}
 .allPictureSectionMiddle__SecondBoxFirstSplitImgBox div:first-child{
-  margin-right: 5px;
+  margin-right: 0px;
+}
+.allPictureSectionMiddle__SecondBoxFirstSplitImgBox div:nth-child(2){
+  margin-top: 0.4rem;
 }
 .allPictureSectionMiddle__SecondBoxFirstSplitImgBoxFirstImgContainer, .allPictureSectionMiddle__SecondBoxFirstSplitImgBoxSecondImgContainer{
-  padding: 0.66rem;
+  padding: 0.44rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.allPictureSectionMiddle__ThirdBox{
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0.5rem;
 }
 .allPictureSectionMiddle__ThirdBox div{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.55rem;
+    margin-right: 0rem;
 }
 .allPictureSectionMiddle__ThirdBoxThirdBox {
   height: 40px;
+}
+.allPictureSectionMiddle__ThirdBox > div{
+  flex-basis: 48%;
+  margin-top: 0.5rem;
+  margin-right: 0.2rem;
 }
 }

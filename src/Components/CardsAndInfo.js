@@ -18,7 +18,6 @@ function CardsAndInfo() {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
             setSectionVisible(entry?.isIntersecting);
-            console.log(entry);
         }, Option);
 
         observer.observe(Ref?.current);
